@@ -7,8 +7,54 @@
     --Destaque-inverso
     --Fundo-card
 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Fundo-Principal: #f5f5f5;
+    --Texto: #222222;
+    --Texto-inverso: #ffffff;
+    --Destaque: #0077ff;
+    --Destaque-inverso: #66bbff;
+    --Fundo-card: #ffffff;
+}
 
 body {
-    background-color: lightgray;
-    color: darkblue;
+    font: verdana, Tahoma, sans-serif;
+    line-height: 1.5em;
+    background-color: var(--Fundo-Principal);
+    color: var(--Texto);
+}
+
+header {
+    background-color: var(--Destaque);
+    color: var(--Texto);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+}
+
+nav#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: var(--Texto-inverso);
+    font-weight: 600;
+    padding: 12px 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s, color 0.5s;
+}
+
+nav#menu a:hover {
+    background-color: var(--Destaque-inverso);
+    color: var(--Destaque);
 }
