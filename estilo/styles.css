@@ -1,0 +1,14 @@
+/*
+    Variaveis para Cores::after
+    --Fundo-Principal
+    --Texto
+    --Texto-inverso
+    --Destaque
+    --Destaque-inverso
+    --Fundo-card
+*/
+
+body {
+    background-color: lightgray;
+    color: darkblue;
+}
